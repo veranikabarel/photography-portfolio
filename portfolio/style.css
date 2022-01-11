@@ -1,0 +1,66 @@
+/* colors"
+bg-dark:000000;
+gold: bdae82
+white:ffffff;
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('./assets/img/bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover,
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+}
