@@ -6,11 +6,13 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: white;
-  
+
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: 'Merriweather', serif;
 }
 
@@ -118,6 +120,7 @@ header {
 
 .skills-section p {
     font-size: 18px;
+    font-weight: 400;
 }
 
 .skills-section img {
@@ -156,7 +159,13 @@ header {
     width: 450px;
 }
 
+.video-section {
+    height: 945px;
+}
+
 .video-player {
+    width: 1400px;
+    height: 705;
     position: relative;
     display: flex;
     justify-content: center;
@@ -166,3 +175,31 @@ header {
 .play-hover {
     position: absolute;
 }
+
+.price-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    gap: 10px;
+}
+
+.price-grid-item {
+    text-align: center;
+    line-height: 36px;
+    border: solid #bdae82;
+    height: 450px;
+    width: 505px;
+}
+
+.price-grid-item p {
+    color: #bdae82;
+}
+
+.block-span {
+    display: block;
+}
+
+.btn-price {
+    margin-top: 25px;
+}
+
