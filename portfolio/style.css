@@ -13,13 +13,8 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
     font-family: 'Merriweather', serif;
-    font-size: 60px;
 }
 
 .container {
@@ -65,7 +60,7 @@ header .container {
     background-image: url('./assets/img/bg.png');
     background-position: center -90px;
     background-repeat: no-repeat;
-    height: 910px;
+    height: 820px;
 }
 
 .hero-text {
@@ -78,6 +73,7 @@ header .container {
 
 .hero-text h1 {
     line-height: 120px;
+    font-size: 60px;
 }
 
 .hero-text p {
@@ -93,4 +89,41 @@ header .container {
     background-color: #bdae82;
     cursor: pointer;
     font-family: inherit;
+}
+
+.section-title {
+    font-size: 40px;
+    height: 80px;
+    margin: 0;
+    padding-top: 120px;
+    font-weight: bold;
+    color: #bdae82;
+}
+
+.skills-section {
+    background-color: black;
+    height: 482px;
+    text-align: center;
+}
+
+.skills-section h3 {
+    size: 20px;
+}
+
+.skills-section p {
+    font-size: 18px;
+}
+
+.skills-section img {
+    height: 50px;
+}
+
+.skills-grid {
+    display: flex;
+    height: 242px;
+    margin-top: 160px;
+}
+
+.grid-item {
+    padding: 15px 30px;
 }
