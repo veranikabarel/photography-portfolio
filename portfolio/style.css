@@ -23,15 +23,14 @@ h4 {
     background-color: black;
 }
 
-header {
-    background-color: black;
+.header {
+    background-image: url('./assets/img/bg.png');
 }
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
     margin: 0 auto;
 }
 
@@ -203,3 +202,33 @@ header {
     margin-top: 25px;
 }
 
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    background: url(./assets/img/contacts.jpg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.contact-title {
+    text-align: left;
+}
+
+.contact-form {
+    flex-direction: column;
+    align-content: flex-start;
+    height: 450px;
+    width: 445px;
+}
+
+.contact-form input {
+    opacity: 0.2;
+    height: 50px;
+    width: 450px;
+    border: solid #bdae82;
+    margin-bottom: 10px;
+}
