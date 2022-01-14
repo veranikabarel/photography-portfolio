@@ -248,10 +248,14 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-end;
-    background: url("./assets/img/contacts.jpg");
-    background-position: initial;
-    background-repeat: no-repeat;
     height: 700px;
+}
+
+.contacts-section {
+    background: url("./assets/img/contacts.jpg");
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .contact-title {
