@@ -125,6 +125,15 @@ nav {
     height: 80px;
     font-family: var(--font1);
     color: var(--color-gold);
+    background-color: var(--color-black);
+    margin: 100px 606px 60px 606px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line {
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
 }
 
 .skills-section {
@@ -196,6 +205,10 @@ nav {
     position: absolute;
 }
 
+.price-section {
+    height: 845px;
+}
+
 .price-grid {
     display: flex;
     justify-content: space-evenly;
@@ -243,6 +256,10 @@ nav {
 
 .contact-title {
     text-align: left;
+    font-size: 40px;
+    height: 80px;
+    font-family: var(--font1);
+    color: var(--color-gold);
 }
 
 .contact-form {
@@ -252,12 +269,28 @@ nav {
     width: 445px;
 }
 
-.contact-form input {
-    opacity: 0.2;
+.contact-form input,
+textarea {
     height: 50px;
     width: 450px;
     border: solid var(--color-gold);
     margin-bottom: 10px;
+    padding: 5px 226px 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: var(--font2);
+    color: #bdae82;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    width: 450px;
+    resize: none;
 }
 
 .footer-section {
