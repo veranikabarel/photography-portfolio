@@ -232,3 +232,11 @@ h4 {
     border: solid #bdae82;
     margin-bottom: 10px;
 }
+
+.footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
