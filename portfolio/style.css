@@ -47,10 +47,17 @@ h3 {
 
 nav {
     margin-left: auto;
+    margin-right: 30px;
+
 }
 
 .nav-list {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 510px;
+    height: 50px;
 }
 
 .nav-item {
@@ -58,10 +65,18 @@ nav {
 }
 
 .nav-link {
-    padding: 0 20px;
     line-height: 50px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--color-white);
+}
+
+.lang {
+    font-weight: bold;
+}
+
+.en {
+    color: var(--color-gold);
 }
 
 .lang-switch {
@@ -80,25 +95,27 @@ nav {
     flex-direction: column;
     height: 330px;
     width: 500px;
-    margin-top: 160px;
-    margin-left: 80px;
+    margin-top: 110px;
+    margin-left: 60px;
 }
 
 .hero-text h1 {
     line-height: 120px;
     font-size: 60px;
+    margin-bottom: 0;
 }
 
 .hero-text p {
     line-height: 40px;
-    height: 120px;
     width: 470px;
+    margin: 10px 0 24px 0;
+
 }
 
 .btn {
     border: 0;
     height: 55px;
-    width: 250px;
+    width: 220px;
     font-family: inherit;
     font-size: 20px;
 }
@@ -126,7 +143,7 @@ nav {
     font-family: var(--font1);
     color: var(--color-gold);
     background-color: var(--color-black);
-    margin: 100px 606px 60px 606px;
+    margin: 100px 307px 0px 307px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,37 +155,40 @@ nav {
 
 .skills-section {
     background-color: var(--color-black);
-    height: 482px;
-    text-align: center;
+    padding-bottom: 6px;
 }
 
-.skills-section h3 {
+.skills-section h4 {
     size: 20px;
 }
 
-.skills-section p {
-    font-size: 18px;
+.skills-section span {
     font-weight: 400;
     line-height: 36px;
 }
 
 .skills-section img {
     height: 50px;
+    margin-bottom: 32px;
 }
 
 .skills-grid {
     display: flex;
-    height: 242px;
-    margin-top: 160px;
+    justify-content: space-between;
+    padding-top: 54px;
 }
 
 .grid-item {
-    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 240px;
+    width: 320px;
 }
 
 .portfolio-section {
     background-color: var(--color-black);
-    height: 1500px;
     text-align: center;
 }
 
@@ -189,16 +209,18 @@ nav {
 }
 
 .video-section {
-    height: 945px;
+    height: 845px;
 }
 
 .video-player {
     width: 1400px;
-    height: 705;
+    height: 700;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
+
 }
 
 .play-hover {
@@ -206,22 +228,27 @@ nav {
 }
 
 .price-section {
-    height: 845px;
+    height: 745px;
 }
 
 .price-grid {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-    gap: 10px;
+    justify-content: space-between;
+    padding-top: 60px;
+    gap: 26px;
 }
 
 .price-grid-item {
     text-align: center;
     line-height: 36px;
     border: solid var(--color-gold);
-    height: 450px;
-    width: 505px;
+    height: 502px;
+    width: 506px;
+    padding-top: 24px;
+}
+
+.price-grid-item h3 {
+    font-size: 28px;
 }
 
 .price-grid-item span {
@@ -232,21 +259,23 @@ nav {
     color: var(--color-gold);
     font-family: var(--font1);
     font-size: 24px;
+    padding-top: 8px;
 }
 
 .block-span {
     display: block;
+    font-size: 18px;
 }
 
 .btn-price {
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .contacts-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-end;
     height: 700px;
 }
@@ -255,7 +284,7 @@ nav {
     background: url("./assets/img/contacts.jpg");
     width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 24px 0 20px;
 }
 
 .contact-title {
@@ -264,12 +293,13 @@ nav {
     height: 80px;
     font-family: var(--font1);
     color: var(--color-gold);
+    margin-bottom: 26px;
 }
 
 .contact-form {
     flex-direction: column;
     align-content: flex-start;
-    height: 450px;
+    height: 400px;
     width: 445px;
 }
 
@@ -278,8 +308,8 @@ textarea {
     height: 50px;
     width: 450px;
     border: solid var(--color-gold);
-    margin-bottom: 10px;
-    padding: 5px 226px 5px 20px;
+    margin-bottom: 20px;
+    padding: 4px 0px 0px 18px;
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -297,6 +327,10 @@ textarea::placeholder {
     resize: none;
 }
 
+.contact-btn {
+    margin-top: 10px;
+}
+
 .footer-section {
     height: 150px;
     display: flex;
@@ -308,4 +342,23 @@ textarea::placeholder {
 .footer-section a {
     color: var(--color-white);
     text-decoration: none;
+}
+
+.copy {
+    width: 168px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rss {
+    width: 226px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.media {
+    width: 188px;
+    display: flex;
+    justify-content: space-between;
 }
