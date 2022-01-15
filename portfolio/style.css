@@ -140,17 +140,22 @@ nav {
     text-align: center;
     font-size: 40px;
     height: 80px;
+    width: 232px;
     font-family: var(--font1);
     color: var(--color-gold);
     background-color: var(--color-black);
     margin: 100px 307px 0px 307px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .line {
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    margin: 0 350px;
 }
 
 .skills-section {
@@ -190,6 +195,7 @@ nav {
 .portfolio-section {
     background-color: var(--color-black);
     text-align: center;
+    height: 1500px;
 }
 
 .portfolio-btns {
@@ -209,7 +215,8 @@ nav {
 }
 
 .video-section {
-    height: 845px;
+    height: 945px;
+    padding-bottom: 100px;
 }
 
 .video-player {
@@ -228,7 +235,8 @@ nav {
 }
 
 .price-section {
-    height: 745px;
+    height: 845px;
+    padding-bottom: 200px;
 }
 
 .price-grid {
