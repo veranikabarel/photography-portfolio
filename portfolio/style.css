@@ -121,7 +121,7 @@ nav {
 }
 
 .btn:hover {
-    color: (var(--color-white));
+    color: #fff;
     cursor: pointer;
 }
 
@@ -164,7 +164,7 @@ nav {
 }
 
 .skills-section h4 {
-    size: 20px;
+    font-size: 20px;
 }
 
 .skills-section span {
@@ -221,7 +221,7 @@ nav {
 
 .video-player {
     width: 1400px;
-    height: 700;
+    height: 700px;
     position: relative;
     display: flex;
     justify-content: center;
