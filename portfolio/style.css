@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hover:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
     cursor: pointer;
@@ -367,6 +371,16 @@ textarea::placeholder {
 
 .media {
     width: 188px;
+}
+
+.media-nav-list {
     display: flex;
     justify-content: space-between;
+    width: 188px;
+    padding-left: 0;
+
+}
+
+.media-nav-item {
+    list-style-type: none;
 }
