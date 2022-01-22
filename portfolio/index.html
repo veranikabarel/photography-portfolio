@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="assets/photo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap"
         rel="stylesheet">
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <header class="header">
             <div>
@@ -39,18 +41,20 @@
 
 
     <main>
-        <div class="container">
-            <!--HERO-->
-            <section class="hero-section">
+        <!--HERO-->
+        <section class="hero-section">
+            <div class="container hero-container">
                 <div class="hero-text">
                     <h1>Alexa Rise</h1>
                     <p>Save sincere emotions, romantic feelings and happy moments of life together with professional
                         photographer Alexa Rise</p>
                     <button class="btn btn-gold">Hire me</button>
                 </div>
-            </section>
-            <!--SKILLS-->
-            <section class="skills-section" id="skills">
+            </div>
+        </section>
+        <!--SKILLS-->
+        <section class="skills-section" id="skills">
+            <div class="container slills-container">
 
                 <div class="line">
                     <h2 class="section-title">Skills</h2>
@@ -94,9 +98,11 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--PORTFOLIO-->
-            <section class="portfolio-section" id="portfolio">
+            </div>
+        </section>
+        <!--PORTFOLIO-->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container portfolio-container">
                 <div class="line">
                     <h2 class="section-title">Portfolio</h2>
                 </div>
@@ -114,23 +120,25 @@
                     <img class="portfolio-grid-item" src="./assets/img/portfolio-img1.jpg" alt="picture">
                     <img class="portfolio-grid-item" src="./assets/img/portfolio-img.jpg" alt="picture">
                 </div>
-            </section>
-            <!--VIDEO-->
+            </div>
+        </section>
+        <!--VIDEO-->
 
-            <section class="video-section" id="video">
+        <section class="video-section" id="video">
+            <div class="container video-container">
                 <div class="line">
                     <h2 class="section-title">Video</h2>
                 </div>
 
                 <div class="video-player">
                     <img src="./assets/img/video-player.jpg" alt="">
-                    <img class="play-hover hover" src="./assets/img/Play_hover.png" alt="">
+                    <button class="video-section-btn hover"></button>
                 </div>
-
-            </section>
-            <!--PRICE-->
-            <section class="price-section" id="price">
-
+            </div>
+        </section>
+        <!--PRICE-->
+        <section class="price-section" id="price">
+            <div class="container price-container">
                 <div class="line">
                     <h2 class="section-title">Price</h2>
                 </div>
@@ -169,23 +177,22 @@
                         <button class="btn btn-gold btn-price">Order shooting</button>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
         <!--CONTACTS-->
 
         <section class="contacts-section" id="contacts">
-
-            <form class="contact-form">
-                <h2 class="contact-title">Contact me</h2>
-                <input class="block-span" type="email" placeholder="E-mail">
-                <input class="block-span" type="tel" placeholder="Phone">
-                <textarea class="block-span form-text" placeholder="Message"></textarea>
-                <button class="btn btn-gold contact-btn">Send message</button>
-            </form>
-
+            <div class="container contacts-container">
+                <form class="contact-form">
+                    <h2 class="contact-title">Contact me</h2>
+                    <input class="block-span" type="email" placeholder="E-mail">
+                    <input class="block-span" type="tel" placeholder="Phone">
+                    <textarea class="block-span form-text" placeholder="Message"></textarea>
+                    <button class="btn btn-gold contact-btn">Send message</button>
+                </form>
+            </div>
         </section>
-
-
     </main>
     <footer>
         <div class="container">
@@ -202,13 +209,13 @@
                 </div>
                 <div class="media">
                     <ul class="media-nav-list">
-                        <li class="media-nav-item"><a href="#" target="blank" title="Instagram"> <img
+                        <li class="hover media-nav-item"><a href="#" target="blank" title="Instagram"> <img
                                     src="./assets/svg/inst.svg" alt="intagram icon" /></a></li>
-                        <li class="media-nav-item"><a href="#" target="blank" title="Facebook"> <img
+                        <li class="hover media-nav-item"><a href="#" target="blank" title="Facebook"> <img
                                     src="./assets/svg/fb.svg" alt="facebook icon" /></a></li>
-                        <li class="media-nav-item"><a href="#" target="blank" title="Twitter"> <img
+                        <li class="hover media-nav-item"><a href="#" target="blank" title="Twitter"> <img
                                     src="./assets/svg/tw.svg" alt="twitter icon" /></a></li>
-                        <li class="media-nav-item"><a href="#" target="blank" title="Pinterest"> <img
+                        <li class="hover media-nav-item"><a href="#" target="blank" title="Pinterest"> <img
                                     src="./assets/svg/pinterest.svg" alt="pinterest icon" /></a></li>
                     </ul>
                 </div>

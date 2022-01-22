@@ -17,6 +17,7 @@ html {
 .hover:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 body {
@@ -24,7 +25,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: var(--color-white);
-
+    background-color: var(--color-black);
 }
 
 h1,
@@ -37,7 +38,6 @@ h3 {
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: var(--color-black);
 }
 
 .header {
@@ -87,19 +87,20 @@ nav {
     margin: 0 5px;
 }
 
-.hero-section {
+.hero-container {
     display: flex;
     background-image: url('./assets/img/bg.png');
     background-position: center -90px;
     background-repeat: no-repeat;
     height: 820px;
+    width: 1444px;
 }
 
 .hero-text {
     flex-direction: column;
     height: 330px;
     width: 500px;
-    margin-top: 110px;
+    margin-top: 120px;
     margin-left: 60px;
 }
 
@@ -223,19 +224,23 @@ nav {
     padding-bottom: 100px;
 }
 
+.video-section-btn {
+    background-image: url(/portfolio/assets/img/Play_hover.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: none;
+}
+
 .video-player {
     width: 1400px;
     height: 700px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
-
-}
-
-.play-hover {
-    position: absolute;
+    padding-top: 130px;
 }
 
 .price-section {
@@ -283,7 +288,7 @@ nav {
     margin-top: 40px;
 }
 
-.contacts-section {
+.contacts-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -292,7 +297,7 @@ nav {
     height: 700px;
 }
 
-.contacts-section {
+.contacts-container {
     background: url("./assets/img/contacts.jpg");
     width: 1440px;
     margin: 0 auto;
@@ -340,7 +345,7 @@ textarea::placeholder {
 }
 
 .contact-btn {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .footer-section {
